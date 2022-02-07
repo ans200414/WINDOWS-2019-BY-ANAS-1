@@ -44,6 +44,7 @@ jobs:
         
     - name: Create Tunnel
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
+    - name: Create Tunnel-2
       run: sc start ngrok
       
     - name: Programmed and developed by 卐ヅANASヅ卍
